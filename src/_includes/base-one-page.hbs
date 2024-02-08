@@ -1,0 +1,179 @@
+---
+title: "Kaipia - Responsive Multipurpose Template"
+---
+
+<!DOCTYPE html>
+<html>
+	{{> head title }}
+
+	<body data-spy="scroll" data-target="#main-nav" data-offset="100">
+		<!-- Master header -->
+		<header class="main-header">
+			<div class="navbar navbar-fixed-top">
+				<nav class="container">
+					<!--Site logo -->
+					<div class="navbar-header">
+						<a href="index.html" class="logo">
+							<img src="img/brand-logo.png" alt="" />
+							<h1 class="sr-only">KaiPia Template</h1>
+						</a>
+
+						<!-- Navbar toggle -->
+						<button
+							type="button"
+							class="navbar-toggle navbar-right"
+							data-toggle="collapse"
+							data-target="#main-nav"
+						>
+							<i class="fa fa-bars"></i>
+						</button>
+					</div>
+
+					<!-- Main navigation -->
+					<div id="main-nav" class="collapse navbar-collapse">
+						<ul class="nav navbar-nav navbar-right nav-style">
+							<li class="dummy"><a href="#home"></a></li>
+							<!-- Dummy <li>, hide scrollspy effect on #home element -->
+							<li>
+								<a href="#about" class="smooth-scroll" data-scroll-offset="40"
+									>About</a
+								>
+							</li>
+							<li>
+								<a href="#feature" class="smooth-scroll" data-scroll-offset="40"
+									>Feature</a
+								>
+							</li>
+							<li>
+								<a href="#service" class="smooth-scroll" data-scroll-offset="40"
+									>Service</a
+								>
+							</li>
+							<li>
+								<a
+									href="#portfolio"
+									class="smooth-scroll"
+									data-scroll-offset="40"
+									>Portfolio</a
+								>
+							</li>
+							<li>
+								<a href="#blog" class="smooth-scroll" data-scroll-offset="40"
+									>Blog</a
+								>
+							</li>
+							<li>
+								<a href="#contact" class="smooth-scroll" data-scroll-offset="40"
+									>Contact</a
+								>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<!-- .container -->
+			</div>
+		</header>
+		<!-- Master header end -->
+
+		{{{ content }}}
+
+		<!-- Master footer -->
+		<footer class="main-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+						<div class="footer-wrap scrollanim" data-animate="fadeIn">
+							<h4>About KaiPia Template</h4>
+
+							<p>
+								KaiPia template is a clean code HTML5/CSS3 template built with
+								amazing web front-end framework Bootstrap 3. It comes with 10+
+								defined page that will make this template come in handy for any
+								web project.
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-3">
+						<div class="footer-wrap scrollanim" data-animate="fadeIn">
+							<h4>Keep In Touch</h4>
+
+							<br />
+
+							<ul class="list-unstyled list-inline">
+								<li>
+									<a class="icon-wrap twitter-brand" href="#"
+										><i class="fa fa-twitter"></i></a
+									><br />
+								</li>
+								<li>
+									<a class="icon-wrap facebook-brand" href="#"
+										><i class="fa fa-facebook"></i></a
+									><br />
+								</li>
+								<li>
+									<a class="icon-wrap google-plus-brand" href="#"
+										><i class="fa fa-google-plus"></i></a
+									><br />
+								</li>
+								<li>
+									<a class="icon-wrap youtube-brand" href="#"
+										><i class="fa fa-youtube"></i></a
+									><br />
+								</li>
+								<li>
+									<a class="icon-wrap vimeo-brand" href="#"
+										><i class="fa fa-vimeo-square"></i></a
+									><br />
+								</li>
+								<li>
+									<a class="icon-wrap flickr-brand" href="#"
+										><i class="fa fa-flickr"></i></a
+									><br />
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-5">
+						<div class="footer-wrap scrollanim" data-animate="fadeIn">
+							<h4>Subscribe Newsletter</h4>
+
+							<p>Enter your email below to subscribe to our newsletter.</p>
+
+							<br />
+
+							<div class="input-group">
+								<input
+									type="text"
+									class="form-control"
+									placeholder="Enter email..."
+								/>
+								<span class="input-group-btn">
+									<button class="btn btn-primary" type="button">
+										Subscribe
+									</button>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="copyright">
+				<div class="container">
+					<span
+						><img
+							style="height: 14px; margin-right: 5px"
+							src="img/brand-icon.png"
+							alt=""
+						/>KaiPia template. All Rights Reserved ©2014.</span
+					>
+				</div>
+			</div>
+		</footer>
+		<!-- Master footer end -->
+
+		{{> foot }}
+	</body>
+</html>

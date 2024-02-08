@@ -1,0 +1,75 @@
+<!-- Style switch - demo only -->
+<div class="style-switch">
+	<a href="#" class="switch-toggle text-primary"><i class="fa fa-flask"></i></a>
+
+	<div class="switch-wrap">
+		<a id="red-theme" href="#" class="switch-link"
+			><span class="icon-wrap red-theme"><i class="fa fa-flask"></i></span
+		></a>
+		<a id="orange-theme" href="#" class="switch-link"
+			><span class="icon-wrap orange-theme"><i class="fa fa-flask"></i></span
+		></a>
+		<a id="pea-theme" href="#" class="switch-link"
+			><span class="icon-wrap pea-theme"><i class="fa fa-flask"></i></span
+		></a>
+		<a id="green-theme" href="#" class="switch-link"
+			><span class="icon-wrap green-theme"><i class="fa fa-flask"></i></span></a
+		><br />
+		<a id="cyan-theme" href="#" class="switch-link"
+			><span class="icon-wrap cyan-theme"><i class="fa fa-flask"></i></span
+		></a>
+		<a id="blue-theme" href="#" class="switch-link"
+			><span class="icon-wrap blue-theme"><i class="fa fa-flask"></i></span
+		></a>
+		<a id="violet-theme" href="#" class="switch-link"
+			><span class="icon-wrap violet-theme"><i class="fa fa-flask"></i></span
+		></a>
+		<a id="magenta-theme" href="#" class="switch-link"
+			><span class="icon-wrap magenta-theme"><i class="fa fa-flask"></i></span
+		></a>
+	</div>
+</div>
+<!-- Style switch end -->
+
+<!-- Style switcher script - demo only -->
+<script>
+	const style = localStorage.getItem("style");
+
+	if (style) {
+		$("link#theme").attr("href", style);
+	}
+
+	$(document).ready(function () {
+		$(".switch-toggle").click(function () {
+			if ($(".switch-wrap").hasClass("open")) {
+				$(".switch-wrap")
+					.addClass("animated bounceOutLeft")
+					.one(
+						"webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
+						function () {
+							$(this).removeClass("animated bounceOutLeft open");
+						}
+					);
+			} else {
+				$(".switch-wrap")
+					.addClass("open animated bounceInLeft")
+					.one(
+						"webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
+						function () {
+							$(this).removeClass("animated bounceInLeft");
+						}
+					);
+			}
+
+			return false;
+		});
+
+		$(".switch-link").click(function () {
+			$("link#theme").attr("href", "css/" + $(this).attr("id") + ".css");
+
+			localStorage.setItem("style", "css/" + $(this).attr("id") + ".css");
+
+			return false;
+		});
+	});
+</script>

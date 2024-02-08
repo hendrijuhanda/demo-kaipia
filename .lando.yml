@@ -1,0 +1,23 @@
+name: demo-kaipia
+services:
+  nginx:
+    type: nginx
+    webroot: _site
+  node:
+    type: node:18
+    ports:
+      - 3000:3000
+tooling:
+  npm:
+    service: node
+  node:
+    service: node
+  npx:
+    service: node
+proxy:
+  nginx:
+    - demo-kaipia.lndo.site
+events:
+  post-start:
+    - node:
+        - npm install && npm run build

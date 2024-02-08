@@ -1,0 +1,173 @@
+---
+layout: base
+title: Contact
+permalink: /contact.html
+---
+
+<!-- Contact page -->
+<div id="contact-page" class="page-wrap">
+	<!-- Page header -->
+	<header class="page-header">
+		<div class="container">
+			<h2>Contact</h2>
+
+			<ol class="breadcrumb pull-right">
+				<li><a href="#">Home</a></li>
+				<li class="active">Contact</li>
+			</ol>
+		</div>
+	</header>
+
+	<!-- Contact section -->
+	<section id="contact" class="section-wrap">
+		<div class="container">
+			<!-- Google map -->
+			<div class="map-wrapper">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253572.68357381187!2d108.42049448374364!3d-6.760931271960494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f1d0f69dbc5d5%3A0x301e8f1fc28ba20!2sCirebon%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1707284755432!5m2!1sen!2sid"
+					style="width: 100%; height: 100%; border: 0"
+					allowfullscreen=""
+					loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"
+				></iframe>
+			</div>
+
+			<hr class="no-line" />
+
+			<div class="row">
+				<!-- Contact info block -->
+				<div class="col-md-4 col-sm-4">
+					<div class="contact-info-wrap">
+						<span class="icon-wrap icon-lg center-block"
+							><i class="fa fa-map-marker"></i></span
+						><br />
+
+						<address>
+							Suite 9/13 South Mahana<br />
+							Montebello 1236 WA
+						</address>
+					</div>
+				</div>
+				<!-- Contact info block end -->
+
+				<!-- Contact info block -->
+				<div class="col-md-4 col-sm-4">
+					<div class="contact-info-wrap">
+						<span class="icon-wrap icon-lg center-block"
+							><i class="fa fa-envelope-o"></i></span
+						><br />
+						<span><a href="#">kaipia@email.com</a></span
+						><br />
+						<span><a href="#">support@email.com</a></span>
+					</div>
+				</div>
+				<!-- Contact info block end -->
+
+				<!-- Contact info block -->
+				<div class="col-md-4 col-sm-4">
+					<div class="contact-info-wrap">
+						<span class="icon-wrap icon-lg center-block"
+							><i class="fa fa-phone"></i></span
+						><br />
+						<span>+62111222333</span><br />
+						<span>+62444555666</span>
+					</div>
+				</div>
+				<!-- Contact info block end -->
+			</div>
+			<!-- .row -->
+
+			<hr class="no-line" />
+
+			<!-- Contact form -->
+			<form
+				id="contact-form"
+				class="contact-form form-validate"
+				method="post"
+				data-parsley-namespace="data-parsley-"
+			>
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+						<div class="form-group has-feedback">
+							<label for="name" class="sr-only"></label>
+							<input
+								id="name"
+								name="name"
+								class="form-control input-lg required"
+								placeholder="Name"
+								type="text"
+								data-parsley-trigger="keyup change"
+							/>
+							<span
+								class="fa fa-check success-icon form-control-feedback"
+							></span>
+							<span class="fa fa-times error-icon form-control-feedback"></span>
+						</div>
+
+						<div class="form-group has-feedback">
+							<label for="email" class="sr-only"></label>
+							<input
+								id="email"
+								name="email"
+								class="form-control input-lg required"
+								placeholder="Email"
+								data-parsley-type="email"
+								data-parsley-trigger="keyup change"
+							/>
+							<span
+								class="fa fa-check success-icon form-control-feedback"
+							></span>
+							<span class="fa fa-times error-icon form-control-feedback"></span>
+						</div>
+
+						<div class="form-group">
+							<label for="subject" class="sr-only"></label>
+							<input
+								id="subject"
+								name="subject"
+								class="form-control input-lg"
+								placeholder="Subject (optional)"
+								type="text"
+							/>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-sm-6">
+						<div class="form-group has-feedback">
+							<textarea
+								name="message"
+								class="form-control required"
+								style="height: 168px"
+								rows="8"
+								placeholder="Message"
+								data-parsley-trigger="keyup change"
+							></textarea>
+							<span
+								class="fa fa-check success-icon form-control-feedback"
+							></span>
+							<span class="fa fa-times error-icon form-control-feedback"></span>
+						</div>
+					</div>
+				</div>
+				<!-- .row -->
+
+				<br />
+
+				<div class="form-group text-center">
+					<button
+						type="submit"
+						class="submit-btn btn btn-lg btn-primary"
+						data-success-msg="Message Sent"
+						data-error-msg="Message Not Sent"
+					>
+						<i class="fa fa-envelope"></i> Send Message
+					</button>
+				</div>
+			</form>
+			<!-- Contact form end -->
+		</div>
+		<!-- .container -->
+	</section>
+	<!-- Contact section end -->
+</div>
+<!-- Contact page end -->

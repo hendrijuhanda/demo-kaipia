@@ -1,0 +1,33 @@
+{
+	"name": "demo-kaipia",
+	"version": "1.0.0",
+	"description": "Legacy HTML template, repacked with eleventy.",
+	"scripts": {
+		"build": "NODE_ENV=production npx @11ty/eleventy",
+		"dev": "npx @11ty/eleventy --serve"
+	},
+	"author": "Hendri Juhanda",
+	"license": "MIT",
+	"devDependencies": {
+		"@11ty/eleventy": "^2.0.1",
+		"autoprefixer": "^10.4.17",
+		"esbuild": "^0.20.0",
+		"postcss": "^8.4.34",
+		"postcss-csso": "^6.0.1",
+		"postcss-import": "^16.0.0",
+		"postcss-media-minmax": "^5.0.0"
+	},
+	"dependencies": {
+		"animate.css": "^3.7.2",
+		"bootstrap": "^3.1.1",
+		"code-prettify": "^0.1.0",
+		"fitvids.1.1.0": "^1.1.0",
+		"font-awesome": "^4.7.0",
+		"jquery": "^1.12.4",
+		"jquery-waypoints": "^2.0.5",
+		"jquery.scrollto": "^2.1.3",
+		"magnific-popup": "^1.1.0",
+		"parsleyjs": "^2.9.2",
+		"shufflejs": "^6.1.0"
+	}
+}
